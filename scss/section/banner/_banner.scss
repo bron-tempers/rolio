@@ -1,0 +1,197 @@
+/* === === === === === === */
+.banner {
+    margin-top: -6rem;
+    position: relative;
+    z-index: 100;
+}
+
+.offers {
+
+    // slider
+
+    &__slide {
+        width: 100%;
+        position: relative;
+
+        &--salat {
+            color: $salat;
+        }
+    }
+
+    &__content {
+        margin-left: auto;
+        margin-right: 4.8rem;
+        max-width: 69.2rem;
+        padding: 10rem 0 13rem;
+    }
+
+    &__title-text {
+        margin-top: 0;
+        margin-bottom: 3.6rem;
+
+        @include fontAmatic(3.6em, 700);
+        line-height: 125%;
+        color: inherit;
+    }
+
+    &__image {
+        margin-left: 12rem;
+
+        width: 481px;
+        height: 481px;
+
+        position: absolute;
+        left: 0;
+        bottom: 6rem;
+
+        border-radius: 50%;
+        background: $gradient;
+
+        &-bottle {
+            width: 14.9rem;
+            height: 64.6rem;
+
+            position: absolute;
+            left: 190px;
+            bottom: -45px;
+            z-index: 999;
+
+            display: block;
+            
+            transform: rotate(10deg);
+        }
+
+        &-decor {
+            width: 26.7rem;
+            height: 25.9rem;
+
+            position: absolute;
+            left: 23.5rem;
+            bottom: -3rem;
+            z-index: 9;
+        }
+
+        &::before {
+            content: "";
+
+            width: 557px;
+            height: 557px;
+            
+            position: absolute;
+            top: -3.8rem;
+            bottom: -3.8rem;
+            left: -3.8rem;
+            right: -3.8rem;
+
+            background: linear-gradient(320.69deg, #536614 15.36%, #97C20B 84.86%);
+            box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
+            opacity: 0.2;
+            border-radius: 50%;
+        }
+    }
+
+    // descript 
+    &__heading {
+        font-size: 6.4em;
+        color: $text;
+    }
+
+    &__text {
+        margin-bottom: 3.2rem;
+        max-width: 61.3rem;
+        @include fontRoboto(1.8em, 300);
+        line-height: 2.4rem;
+        color: $text;
+    }
+
+    &__number {
+        margin-bottom: 3.2rem;
+        height: 3.2rem;
+
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    &__amount {
+        @include fontRoboto(2.4em, 500);
+        line-height: 3.2rem;
+        color: $salat;
+    }
+
+    &__amount-minus, &__amount-plus {
+        width: 3.2rem;
+        height: 3.2rem;
+        border: 1px solid $gray;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 8px;
+        cursor: pointer;
+
+        @include fontRoboto(1.8em, 300);
+        color: $text;
+    }
+
+    // action 
+    &__action {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    &__button {
+        border: 1px solid $salat;
+        padding: 0.8rem 4.8rem;
+
+        border-radius: 50px;
+
+        @include fontRoboto(1.8em, 500);
+        color: $salat;
+
+        transition: 0.4s;
+
+        &:hover {
+            background: $gradient;
+            color: $white;
+        }
+    }
+}
+
+.offers-type {
+    margin-bottom: 4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+
+    &__item {
+        padding: 0.8rem 1.6rem;
+
+        background-color: transparent;
+        cursor: pointer;
+        user-select: none;
+
+        @include fontRoboto(1.8em, 400);
+        transition: 0.4s all;
+
+        &--salat {
+            border: 1px solid $salat-light;
+            color: $salat-light;
+
+            &-open {
+                background-color: $salat-light;
+                color: $salat;
+            }
+        
+            &:hover {
+                background-color: $salat-light;
+                color: $salat;
+            }
+            
+        }
+    }
+}

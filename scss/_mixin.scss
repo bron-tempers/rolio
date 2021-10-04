@@ -10,3 +10,9 @@
     font-size: $size;
     font-weight: $weight;
 }
+
+@mixin fontAmatic ($size, $weight) {
+    font-family: 'Amatic SC', cursive;
+    font-size: $size;
+    font-weight: $weight;
+}
