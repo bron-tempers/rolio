@@ -52,6 +52,41 @@
     }
 }
 
+.case-button {
+    margin-right: 1.4rem;
+    border: none;
+    padding: 0;
+
+    position: relative;
+
+    background-color: transparent;
+    cursor: pointer;
+
+    &__icon {
+        font-size: 4rem;
+        color: $salat;
+    }
+
+    &__number {
+        width: 2.4rem;
+        height: 2.4rem;
+
+        position: absolute;
+        top: -13px;
+        right: -16px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: $meet;
+        border-radius: 50%;
+
+        @include fontRoboto(1.5em, 400);
+        color: $white;
+    }
+}
+
 .burger-button {
     display: none;
 }

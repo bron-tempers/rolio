@@ -4,3 +4,9 @@
     font-size: $size;
     font-weight: $weight;
 }
+
+@mixin fontRoboto ($size, $weight) {
+    font-family: 'Roboto', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+}
